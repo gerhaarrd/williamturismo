@@ -8,7 +8,7 @@ import { FeaturedVideoTile } from "./FeaturedVideoTile";
 
 // Shared sizing: a peeking horizontal card (fixed aspect, like a feed) on mobile,
 // a normal masonry tile (natural aspect ratio) from sm: up.
-export const GALLERY_TILE_WIDTH = "w-[76vw] max-w-[320px] flex-none snap-start sm:w-full sm:max-w-none";
+export const GALLERY_TILE_WIDTH = "w-[76vw] max-w-[320px] flex-none snap-center sm:w-full sm:max-w-none";
 export const GALLERY_TILE_ASPECT = "aspect-[4/5] sm:aspect-auto";
 
 function toThumb(path: string, ext: "jpg" | "webp") {
@@ -66,7 +66,7 @@ export function Gallery() {
 
         <div className="relative -mx-6 sm:mx-0">
           <div
-            className="flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-2 [-ms-overflow-style:none] [scrollbar-width:none] sm:block sm:columns-2 sm:gap-4 sm:overflow-visible sm:px-0 sm:pb-0 [&::-webkit-scrollbar]:hidden lg:columns-3"
+            className="flex snap-x snap-mandatory gap-4 overflow-x-auto px-[max(12vw,calc((100vw-320px)/2))] pb-2 [-ms-overflow-style:none] [scrollbar-width:none] sm:block sm:columns-2 sm:gap-4 sm:overflow-visible sm:px-0 sm:pb-0 [&::-webkit-scrollbar]:hidden lg:columns-3"
           >
             {featuredVideos.map((video, i) => (
               <FeaturedVideoTile key={video.id} video={video} index={i} />
@@ -76,6 +76,7 @@ export function Gallery() {
             ))}
           </div>
 
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-sand-200 to-transparent sm:hidden" />
           <div className="pointer-events-none absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-sand-200 to-transparent sm:hidden" />
         </div>
 

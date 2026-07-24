@@ -21,7 +21,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-9 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr]">
         <div>
           <a href="#top" className="mb-3.5 flex items-center gap-2.5 text-[0.95rem] font-extrabold text-white">
-            <img src="/images/logo-mark.svg" alt="" className="h-9 w-9 rounded-full" />
+            <img src="/logo.png" alt="" className="h-9 w-9 rounded-full object-cover" />
             <span className="flex flex-col leading-tight">
               {siteConfig.brandName}
               <small className="text-[0.6rem] font-bold uppercase tracking-[0.14em] text-coral">

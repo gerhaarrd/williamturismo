@@ -48,7 +48,7 @@ export function Header() {
             scrolled ? "text-blue-900" : "text-white"
           }`}
         >
-          <img src="/images/logo-mark.svg" alt="" className="h-9 w-9 rounded-full" />
+          <img src="/logo.png" alt="" className="h-9 w-9 rounded-full object-cover" />
           <span className="flex flex-col leading-tight">
             {siteConfig.brandName}
             <small className="text-[0.6rem] font-bold uppercase tracking-[0.14em] text-coral">
