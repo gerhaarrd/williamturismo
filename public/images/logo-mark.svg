@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Amaral Tour Rio Drive">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDC94B"/>
+      <stop offset="0.55" stop-color="#F08A4B"/>
+      <stop offset="1" stop-color="#0E4F63"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="32" fill="url(#sky)"/>
+  <circle cx="32" cy="23" r="8.5" fill="#FFF6DE" opacity="0.92"/>
+  <path d="M-2 47 L13 29 L21 37 L33 20 L45 37 L53 30 L66 47 L66 66 L-2 66 Z" fill="#0B3B49"/>
+  <path d="M33 12.5 L33 20.5 M29.8 16 L36.2 16" stroke="#0B3B49" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M-2 55 Q32 43 66 55" stroke="#FDC94B" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="1.2 7"/>
+</svg>

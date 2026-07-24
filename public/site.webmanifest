@@ -1,0 +1,22 @@
+{
+  "name": "Amaral Tour · Rio Drive",
+  "short_name": "Amaral Tour",
+  "description": "Tours privados e city drive pelo Rio de Janeiro.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf7ee",
+  "theme_color": "#0b3b49",
+  "icons": [
+    {
+      "src": "/images/logo-mark-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
